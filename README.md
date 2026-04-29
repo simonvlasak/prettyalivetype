@@ -1,2 +1,0 @@
-# prettyalivetype
-prettyalivetype web
