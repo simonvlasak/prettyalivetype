@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: Really Grotesk_SB;
-  src: url("./Fonts/ReallyGrotesk-SemiBold.otf");
+  src: url("./Fonts/ReallyGrotesk-Semibold.otf");
 }
 @font-face {
   font-family: Qarel;
@@ -268,6 +268,7 @@ nav::after {
 /* Font name centered */
 .font_name {
   justify-self: center;
+  margin: auto 10px;
   text-align: center;
   font-family: Really Grotesk_SB;
   font-size: 120%;
@@ -802,4 +803,141 @@ H2 {
 
 .toggle-color-btn:hover {
   color: #00ac00;
+}
+
+// INDEX.HTML - COLOR STYLED BOXES
+// opuntia style
+.opuntia.tester .controls select {
+  background-color: #ac7dff;
+}
+
+.opuntia.tester .controls .slider-background {
+  color: #ac7dff;
+}
+
+.opuntia.tester .slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 3px;
+  background-color: #ac7dff80;
+}
+
+.opuntia.tester .controls .slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #ac7dff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.opuntia.tester .controls .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ac7dff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+//tide style
+.tide.tester .controls select {
+  background-color: #258228;
+}
+
+.tide.tester .controls .slider-background {
+  color: #258228;
+}
+
+.tide.tester .slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 3px;
+  background-color: #25822880;
+}
+
+.tide.tester .controls .slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #258228;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.tide.tester .controls .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #258228;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+//tulsa style
+.tulsa.tester .controls select {
+  background-color: #bb2626;
+}
+
+.tulsa.tester .controls .slider-background {
+  color: #bb2626;
+}
+
+.tulsa.tester .slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 3px;
+  background-color: #bb262680;
+}
+
+.tulsa.tester .controls .slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #bb2626;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.tulsa.tester .controls .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #bb2626;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+//mon style
+.mon.tester .controls select {
+  background-color: #1040c4;
+}
+
+.mon.tester .controls .slider-background {
+  color: #1040c4;
+}
+
+.mon.tester .slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 3px;
+  background-color: #1040c480;
+}
+
+.mon.tester .controls .slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #1040c4;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.mon.tester .controls .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #1040c4;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
 }
