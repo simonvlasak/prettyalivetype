@@ -300,6 +300,7 @@ nav::after {
   border-radius: 999em;
   cursor: pointer;
   appearance: none; /* Remove default dropdown styling */
+  -webkit-appearance: none;
   outline: none;
   position: relative;
   font-size: 15px;
@@ -307,6 +308,7 @@ nav::after {
   background-color: #00ac00;
   font-family: inherit;
   text-align: center;
+  text-align-last: center; /* Firefox */
 }
 
 /* Sliders */
