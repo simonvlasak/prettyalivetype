@@ -295,6 +295,8 @@ nav::after {
 
 /* Dropdown menu */
 .controls select {
+  display: block;
+  margin: 0 auto;
   padding: 5px 10px;
   border: none;
   border-radius: 999em;
