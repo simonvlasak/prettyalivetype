@@ -364,6 +364,7 @@ nav::after {
 }
 
 .button:hover {
+  color: #ffffff;
   background-color: #000000;
   animation: shake 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
