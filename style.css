@@ -504,7 +504,7 @@ nav::after {
   font-family: "Opuntia-Book"; /* Default font */
   font-size: 200px; /* Default size */
   line-height: 100%; /* Default line height */
-  color: #ac7dff;
+  color: #004229;
   padding: 20px;
   border-radius: 5px;
   outline: none;
@@ -564,7 +564,7 @@ nav::after {
   font-family: "Opuntia-Italic"; /* Default font */
   font-size: 200px; /* Default size */
   line-height: 120%; /* Default line height */
-  color: #ac7dff;
+  color: #004229;
   padding: 20px;
   border-radius: 5px;
   outline: none;
@@ -595,7 +595,7 @@ nav::after {
   font-family: "Opuntia-Book"; /* Default font */
   font-size: 9vw; /* Default size */
   line-height: 100%; /* Default line height */
-  color: #ac7dff;
+  color: #004229;
   padding: 20px;
   border-radius: 5px;
   outline: none;
@@ -812,7 +812,7 @@ H2 {
 // INDEX.HTML - COLOR STYLED BOXES
 // opuntia style
 .opuntia.tester .controls select {
-  background-color: #ac7dff;
+  background-color: #004229;
 }
 
 .opuntia.tester .controls .slider-background {
