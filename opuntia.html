@@ -434,6 +434,25 @@ In the 2023 olive harvest season, Yesh Din reported 113 attacks by Israeli settl
   <img src="photos/opuntia-2.jpg" style="width: 48.75%; height: 800px; object-fit: cover; object-position: center; border-radius: 10px; margin: 0 1.25% 0 0;">
   <img src="photos/opuntia-3.jpg" style="width: 48.75%; height: 800px; object-fit: cover; object-position: center; border-radius: 10px; margin: 0 0 0 1.25%;">
 </div>
+<div class="slider" style="position: relative; margin: 2.5% 17.5%; user-select: none; background-color: transparent;">
+  <div class="slide" style="display: block;">
+    <img src="photos/opuntia-1.jpg" style="width: 100%; height: 50vh; object-fit: cover; object-position: center; border-radius: 10px;">
+    <div class="slide-text" style="text-align: center; margin-top: 12px; font-size: 1rem;">Your text for image 1</div>
+  </div>
+
+  <div class="slide" style="display: none;">
+    <img src="photos/simon.JPG" style="width: 100%; height: 50vh; object-fit: cover; object-position: center; border-radius: 10px;">
+    <div class="slide-text" style="text-align: center; margin-top: 12px; font-size: 1rem;">Your text for image 2</div>
+  </div>
+
+  <!-- Arrows -->
+  <button onclick="changeSlide(-1)" style="position: absolute; top: 45%; left: 30px; transform: translateY(-50%); background:#00ac00; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer;">&#8249;</button>
+  <button onclick="changeSlide(1)"  style="position: absolute; top: 45%; right: 30px; transform: translateY(-50%); background:#00ac00; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer;">&#8250;</button>
+
+  <!-- Numbering -->
+  <div id="slide-counter" style="text-align: center; margin-top: 8px; color: #888; font-size: 0.9rem;">1 / 2</div>
+
+</div>
 
 
 </body>

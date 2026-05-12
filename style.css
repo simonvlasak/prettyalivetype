@@ -668,6 +668,11 @@ nav::after {
   margin-bottom: 2%;
 }
 
+.slider {
+  height: fit-content;
+  width: auto;
+}
+
 .footer {
   width: 94%;
   height: 400px;

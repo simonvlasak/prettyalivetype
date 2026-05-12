@@ -217,3 +217,17 @@ function toggleColor(sampleClass, color) {
   var current = window.getComputedStyle(el).color;
   el.style.color = current === "rgb(0, 0, 0)" ? color : "#000000";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  function changeSlide(dir) {
+    slides[currentSlide].style.display = "none";
+    currentSlide = (currentSlide + dir + slides.length) % slides.length;
+    slides[currentSlide].style.display = "block";
+    document.getElementById("slide-counter").textContent =
+      `${currentSlide + 1} / ${slides.length}`;
+  }
+  window.changeSlide = changeSlide;
+});
