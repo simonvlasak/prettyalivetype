@@ -621,6 +621,21 @@ nav::after {
   margin-bottom: 2%;
 }
 
+.sample14 {
+  font-family: "Opuntia-Book"; /* Default font */
+  font-size: 9vw; /* Default size */
+  line-height: 100%; /* Default line height */
+  color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  word-break: none;
+  min-height: 150px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+
 /*Opuntia */
 
 .sample-opuntia {

@@ -212,6 +212,20 @@ function updateFont13_1(newVal) {
   $(".sample13_1").css("font-family", newVal);
 }
 
+function updateSize14(value) {
+  document.querySelector(".sample14").style.fontSize = value + "px";
+  document.getElementById("sizeLabel14").textContent = value; // add this
+}
+
+function updateLineHeight14(newVal) {
+  var newFontSize = newVal + "px";
+  $(".sample14").css("line-height", newFontSize);
+}
+
+function updateFont14(newVal) {
+  $(".sample14").css("font-family", newVal);
+}
+
 function toggleColor(sampleClass, color) {
   var el = document.querySelector("." + sampleClass);
   var current = window.getComputedStyle(el).color;
@@ -231,3 +245,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.changeSlide = changeSlide;
 });
+
