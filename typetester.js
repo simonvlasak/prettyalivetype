@@ -173,7 +173,7 @@ function updateSize12(value) {
   } else if (value < 45) {
     el.style.columnCount = 3;
   } else {
-    el.style.columnCount = 2;
+    el.style.columnCount = 1;
   }
 }
 function updateLineHeight12(value) {
