@@ -816,7 +816,7 @@ H2 {
 }
 
 .opuntia.tester .controls .slider-background {
-  color: #ac7dff;
+  color: #004229;
 }
 
 .opuntia.tester .slider::-webkit-slider-runnable-track {
@@ -828,7 +828,7 @@ H2 {
 .opuntia.tester .controls .slider::-moz-range-thumb {
   width: 12px;
   height: 12px;
-  background: #ac7dff;
+  background: #004229;
   border-radius: 50%;
   cursor: pointer;
   margin-top: -5px;
@@ -838,7 +838,7 @@ H2 {
   -webkit-appearance: none;
   width: 12px;
   height: 12px;
-  background: #ac7dff;
+  background: #004229;
   border-radius: 50%;
   cursor: pointer;
   margin-top: -5px;
