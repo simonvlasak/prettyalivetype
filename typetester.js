@@ -40,6 +40,34 @@ function updateFont3(newVal) {
   $(".sample3").css("font-family", newVal);
 }
 
+function updateSize3_1(value) {
+  document.querySelector(".sample3_1").style.fontSize = value + "px";
+  document.getElementById("sizeLabel3_1").textContent = value; // add this
+}
+
+function updateLineHeight3_1(newVal) {
+  document.querySelector(".sample3_1").style.lineHeight = newVal + "px";
+  document.getElementById("sizeLabel3_1").textContent = newVal;
+}
+
+function updateFont3_1(newVal) {
+  $(".sample3_1").css("font-family", newVal);
+}
+
+function updateSize3_2(value) {
+  document.querySelector(".sample3_2").style.fontSize = value + "px";
+  document.getElementById("sizeLabel3_2").textContent = value; // add this
+}
+
+function updateLineHeight3_2(newVal) {
+  document.querySelector(".sample3_2").style.lineHeight = newVal + "px";
+  document.getElementById("sizeLabel3_2").textContent = newVal;
+}
+
+function updateFont3_2(newVal) {
+  $(".sample3_2").css("font-family", newVal);
+}
+
 function updateSize4(value) {
   document.querySelector(".sample4").style.fontSize = value + "px";
   document.getElementById("sizeLabel4").textContent = value; // add this
