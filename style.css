@@ -863,6 +863,27 @@ H2 {
   color: #00ac00;
 }
 
+.tester .slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 3px;
+}
+
+.tester .controls .slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.tester .controls .slider::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
 // INDEX.HTML - COLOR STYLED BOXES
 // opuntia style
 .opuntia.tester .controls select {
@@ -874,28 +895,16 @@ H2 {
 }
 
 .opuntia.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #00572380;
 }
 
 .opuntia.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
   background: #005723;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .opuntia.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #005723;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 //tide style
@@ -908,28 +917,16 @@ H2 {
 }
 
 .tide.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #25822880;
 }
 
-.tide.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
+.tide.tester .controls .slider::-moz-range-thumbm {
   background: #258228;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .tide.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #258228;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 //tulsa style
@@ -942,28 +939,16 @@ H2 {
 }
 
 .tulsa.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #bb262680;
 }
 
 .tulsa.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
   background: #bb2626;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .tulsa.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #bb2626;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 //mon style
@@ -976,28 +961,16 @@ H2 {
 }
 
 .mon.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #1040c480;
 }
 
 .mon.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
   background: #1040c4;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .mon.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #1040c4;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 //ozone style
@@ -1010,28 +983,16 @@ H2 {
 }
 
 .ozone.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #9e773480;
 }
 
 .ozone.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
   background: #9e7734;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .ozone.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #9e7734;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 //marz style
@@ -1044,31 +1005,14 @@ H2 {
 }
 
 .marz.tester .slider::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 3px;
   background-color: #ff510080;
 }
 
 .marz.tester .controls .slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
   background: #ff5100;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .marz.tester .controls .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
   background: #ff5100;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -5px;
-}
-
-@media (max-width: 600px) {
-
-
 }
