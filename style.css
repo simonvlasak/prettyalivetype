@@ -1016,3 +1016,403 @@ H2 {
   -webkit-appearance: none;
   background: #ff5100;
 }
+
+/* ========================================
+   MOBILE RESPONSIVE STYLES
+   Přidáno pro mobilní zobrazení
+   ======================================== */
+
+/* Tablet a mobil (768px a menší) */
+@media screen and (max-width: 768px) {
+  
+  /* BODY */
+  body {
+    margin-top: 120px;
+  }
+
+  .text-serif {
+    margin-top: 120px;
+  }
+
+  /* NAVIGACE */
+  nav {
+    min-height: 100px;
+  }
+
+  .nav-blend {
+    height: 100px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .logo {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .menu-links {
+    margin-left: 0;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* TESTER BOXY - pod sebou - ALL same width */
+  .tester,
+  div[style*="display: flex"] .tester,
+  .tester[style*="width"] {
+    width: 90% !important;
+    margin: 5% auto !important;
+    padding: 3%;
+    height: auto !important;
+  }
+
+  /* ===========================================
+     INDIVIDUÁLNÍ VÝŠKY PRO RŮZNÉ TESTERY
+     Každý tester může mít jinou výšku
+     =========================================== */
+  
+  /* Testery s velkými texty (sample1, sample2, atd.) */
+  .tester:has(.sample1),
+  .tester:has(.sample2),
+  .tester:has(.sample3),
+  .tester:has(.sample3_1),
+  .tester:has(.sample3_2),
+  .tester:has(.sample4),
+  .tester:has(.sample5) {
+    min-height: 300px; /* ← ZMĚŇ pro velké texty */
+  }
+
+  /* Testery se středně velkými texty (sample6-11) */
+  .tester:has(.sample6),
+  .tester:has(.sample7),
+  .tester:has(.sample8),
+  .tester:has(.sample10),
+  .tester:has(.sample11) {
+    min-height: 350px; /* ← ZMĚŇ pro střední texty */
+  }
+
+  /* Testery s DLOUHÝM TEXTEM (sample9, sample12) */
+  .tester:has(.sample9),
+  .tester:has(.sample12) {
+    max-height: 400px; /* ← max-height, not min-height */
+  }
+
+  /* Testery s malými texty (sample13, 14) */
+  .tester:has(.sample13),
+  .tester:has(.sample13_1),
+  .tester:has(.sample14) {
+    min-height: 280px; /* ← ZMĚŇ pro malé texty */
+  }
+
+  /* Wrapper divy s inline style height - přepíše */
+  .tester[style*="height"] {
+    height: auto !important;
+  }
+
+  /* DŮLEŽITÉ - Wrapper divy které mají 2 testery vedle sebe */
+  div[style*="display: flex"][style*="margin: 2.5%"] {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  /* Sample9 a Sample12 text - JEDEN SLOUPEC na mobilu */
+  .sample9,
+  .sample12 {
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+  }
+
+  /* NAVIGATION ARROWS - center them vertically on mobile */
+  .slider button[onclick*="changeSlide"],
+  button[onclick*="changeSlide"] {
+    top: 40% !important; /* Adjusted to center on image, not container */
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 1rem !important;
+    left: 20px !important;
+  }
+  
+  .slider button[onclick*="changeSlide(1)"],
+  button[onclick*="changeSlide(1)"] {
+    left: auto !important;
+    right: 20px !important;
+  }
+
+  /* Info tester - pod sebou */
+  .info_tester {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .author,
+  .font_name {
+    justify-self: center;
+  }
+
+  /* CONTROLS - pod sebou */
+  .controls {
+    flex-direction: column;
+    gap: 15px;
+    justify-self: center;
+    width: 100%;
+  }
+
+  .slider-background {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slider {
+    width: 60%;
+  }
+
+  /* FOOTER - pod sebou */
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  /* TEXT SEKCE */
+  H2 {
+    font-size: 180%;
+  }
+
+  .button_big {
+    font-size: 250%;
+  }
+
+  /* HEADINFO - pod sebou */
+  .headinfo-container {
+    flex-direction: column;
+  }
+
+  .headinfo-font,
+  .headinfo-mail {
+    width: 100%;
+  }
+
+  /* PHOTO */
+  .photo {
+    width: 90%;
+  }
+
+  /* INTRO TEXT - keep 2 columns side by side on mobile */
+  /* Only targets the .h1 container, NOT tester wrappers */
+  .h1 > div > div[style*="display: flex"][style*="gap: 2rem"] {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
+    font-size: 14px;
+  }
+
+  .h1 div[style*="column-count: 2"] {
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+  }
+
+  /* OBRÁZKY - responzivní výška */
+  img {
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain !important;
+  }
+
+  /* Obrázky v style atributu - přepíše fixní výšku */
+  img[style*="height"] {
+    height: auto !important;
+  }
+
+  /* Wrapper divy s obrázky vedle sebe - POD SEBOU a na střed */
+  div[style*="display: flex"] img {
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  /* Divy které mají obrázky - POD SEBOU */
+  div[style*="display: flex"][style*="margin: 2.5%"]:has(img) {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  div[style*="display: flex"][style*="margin: 2.5%"] img {
+    width: 90% !important;
+    margin: 2.5% auto !important;
+  }
+
+  /* ===========================================
+     VÝCHOZÍ VELIKOSTI SAMPLE TEXTŮ NA MOBILU
+     Toto nastaví velikost při načtení stránky.
+     Controls (slidery) BUDOU FUNGOVAT a přepíšou tyto hodnoty!
+     =========================================== */
+  
+  /* Sample9 a Sample12 - text ve sloupcích - MUSÍ BÝT 1 SLOUPEC */
+  .sample9 {
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+  }
+
+  .sample12 {
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+  }
+
+  /* VÝCHOZÍ velikosti při načtení (controls je přepíšou) */
+  .sample1 { 
+    font-size: 80px; /* ← ZMĚŇ výchozí velikost */
+  }
+
+  .sample2 { 
+    font-size: 60px; /* ← ZMĚŇ výchozí velikost */
+  }
+
+  .sample3 { 
+    font-size: 70px;
+  }
+
+  .sample3_1 { 
+    font-size: 70px;
+  }
+
+  .sample3_2 { 
+    font-size: 70px;
+  }
+
+  .sample4 { 
+    font-size: 70px;
+  }
+
+  .sample5 { 
+    font-size: 70px;
+  }
+
+  .sample6 { 
+    font-size: 90px;
+  }
+
+  .sample7 { 
+    font-size: 140px;
+  }
+
+  .sample8 { 
+    font-size: 130px;
+  }
+
+  .sample9 {
+    font-size: 30px; /* Text ve sloupcích */
+  }
+
+  .sample10 { 
+    font-size: 200px;
+  }
+
+  .sample11 { 
+    font-size: 140px;
+  }
+
+  .sample12 {
+    font-size: 32px; /* Text ve sloupcích */
+  }
+
+  .sample13 { 
+    font-size: 120px;
+  }
+
+  .sample13_1 { 
+    font-size: 115px;
+  }
+
+  .sample14 { 
+    font-size: 70px;
+  }
+
+  .sample-opuntia { 
+    font-size: 70px;
+  }
+
+  .sample-opuntia2 { 
+    font-size: 100px;
+  }
+
+  .sample-opuntia3 { 
+    font-size: 70px;
+  }
+}
+
+/* Mobil (480px a menší) */
+@media screen and (max-width: 480px) {
+  
+  body {
+    margin-top: 140px;
+  }
+
+  .text-serif {
+    margin-top: 140px;
+  }
+
+  nav {
+    min-height: 120px;
+  }
+
+  .nav-blend {
+    height: 120px;
+  }
+
+  .menu-links {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .tester {
+    width: 95%;
+  }
+
+  /* Wrapper divy s 2 testery - POD SEBOU */
+  div[style*="display: flex"][style*="margin: 2.5%"] {
+    flex-direction: column !important;
+  }
+
+  div[style*="display: flex"][style*="margin: 2.5%"] .tester {
+    width: 95% !important;
+    margin: 5% auto !important;
+  }
+
+  /* Text v 1 sloupci */
+  .sample12 {
+    column-count: 1 !important;
+  }
+
+  H2 {
+    font-size: 140%;
+  }
+
+  .button_big {
+    font-size: 180%;
+  }
+
+  .footer {
+    font-size: 110%;
+  }
+
+  /* Obrázky - responzivní */
+  img {
+    height: auto !important;
+    max-width: 100%;
+  }
+}
